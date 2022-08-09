@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "https://fonts.google.com/specimen/Outfit";
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background:  hsl(217, 54%, 11%);
+}
+
+.ntf-block {
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+    height: 500px;
+    width: 270px;
+    background:  hsl(216, 50%, 16%);
+    padding: 15px;
+    padding-bottom: 1px;
+    border-radius: 22px;
+}
+
+.nft-image {
+    height: 55%;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 5%;
+}
+.nft-image-equilibrium {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    animation: mysoft .5s;
+}
+.nft-image-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 275px;
+    width: 270px;
+    position: absolute;
+    top: 160px;
+    border-radius: 10px;
+    background: rgba(95, 135, 185, 0.309);
+    visibility: hidden;
+    
+}
+@media  screen and(max-width:375px) {
+    .nft-image-view {
+        top: 40px;
+    }
+}
+.nft-image:hover > .nft-image-view {
+    visibility: visible;
+    cursor: pointer;
+}
+
+
+.nft-name {
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 4%;
+    font-size: 28px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.nft-name:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.nft-description{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4%;
+    font-weight: 300;
+    max-width: 94%;
+    color: hsl(215, 51%, 70%);
+
+}
+.nft-value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10%;
+    
+}
+.icon-value {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 17px;
+    color: hsl(178, 100%, 50%);
+
+}
+.nft-value img {
+    margin-right: 7px;
+}
+.icon-day {
+    display: flex;
+    display: flex;
+    align-items: center;
+}
+
+
+hr {
+    margin-bottom: 1%;
+    color:  hsl(215, 32%, 27%);
+}
+
+.nft-creator {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.nft-creator .author-name {
+    padding-left: 10px;
+    color: white;
+}
+.author-name:hover {
+    cursor:pointer;
+    color: hsl(178, 100%, 50%);
+
+}
+
+.nft-creator img{
+    margin-right: 4%;
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 80%;
+}
